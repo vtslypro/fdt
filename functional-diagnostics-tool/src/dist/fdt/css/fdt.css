@@ -1,0 +1,19 @@
+#input-form .form-bordered .form-group>div {
+  padding: 10px;
+}
+
+#input-form .form-bordered .form-group>label {
+  padding: 15px;
+}
+
+.table-advance tr td.highlight:first-child a {
+  margin-left: 0px;
+}
+
+.tabbable-line>.tab-content {
+  padding: 10px;
+}
+
+.div_details .tabbable-line>.tab-content {
+  padding: 0px;
+}

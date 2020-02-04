@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.autodesk.ism</groupId>
+  <artifactId>rover-fdt-front</artifactId>
+  <packaging>pom</packaging>
+  <version>0.5</version>
+
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>2.4</version>
+            <executions>
+              <execution>
+                <id>create-distribution</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>single</goal>
+                </goals>
+                <configuration>
+                  <descriptors>
+                    <descriptor>assembly.xml</descriptor>
+                  </descriptors>
+                </configuration>
+              </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+
+  <name>fdt-front</name>
+  <url>http://maven.apache.org</url>
+
+  <distributionManagement>
+    <repository>
+      <id>autodesk.ism.mavenrepo</id>
+      <name>Rover Internal Repository</name>
+      <url>http://nexus.delivery.ecs.ads.autodesk.com:8081/nexus/content/repositories/internal/</url>
+    </repository>
+  </distributionManagement>
+  <!-- <distributionManagement>
+    <snapshotRepository>
+        <id>deliveryNexus</id>
+        <url>http://nexus.delivery.ecs.ads.autodesk.com:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+
+    <repository>
+        <id>deliveryNexus</id>
+        <url>http://nexus.delivery.ecs.ads.autodesk.com:8081/nexus/content/repositories/releases/</url>
+    </repository>
+  </distributionManagement> -->
+</project>

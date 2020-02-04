@@ -1,0 +1,37 @@
+.td_row_even {
+    padding: 2px;
+    background-color: #f9fcfe;
+    max-height: 140px;
+    overflow-y: auto;
+}
+.td_row_odd {
+    padding: 2px;
+    background-color: #FFF;
+    max-height: 140px;
+    overflow-y: auto;
+}
+.td_head {
+    color: #FFFFFF;
+    background-color: #337ab7;
+    padding: 4px;
+    padding-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.td_head + table .td_head{
+    color: #000;
+    font-size: 14px;
+    background-color:#82CAEA;
+}
+
+.td_head + table .td_head + table .td_head{
+    background-color:#CDEAF7;
+}
+
+table, td, th {
+    border: 1px solid gray;
+}
+table {
+    font-size: 100%
+}
